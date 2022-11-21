@@ -3,7 +3,7 @@ Code for paper "Exploring Spatio-Temporal Graph Convolution for Video-based Huma
 ### Installation
 1. Clone this repository.   
     ```
-    git clone https://github.com/GuangmingZhu/STIGPN2.git
+    git clone https://github.com/NingWang2049/STIGPN2.git
     ```
   
 2. Install Python dependencies:   
