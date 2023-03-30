@@ -320,8 +320,8 @@ def validate(val_loader, model, criterion, epoch=None, tb_logger=None, class_to_
         top_acc5 = str(round(acc_top5.avg,2))
         top_acc = acc_top1.avg
         datatimestr = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        wx_msg = datatimestr + '\n'+args.model+' Epoch:%d \nTop_Acc1: %s \nTop_Acc5: %s'%(epoch,top_acc1,top_acc5)
-        send_wx_msg(wx_msg)
+        # wx_msg = datatimestr + '\n'+args.model+' Epoch:%d \nTop_Acc1: %s \nTop_Acc5: %s'%(epoch,top_acc1,top_acc5)
+        # send_wx_msg(wx_msg)
         torch.save(model.state_dict(),'checkpoints/'+args.model+'_max_score_model_k2.pkl')
     print('Top Acc1:',top_acc1,'Top Acc5:',top_acc5)
 
